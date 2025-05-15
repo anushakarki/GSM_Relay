@@ -47,6 +47,7 @@ def control_relay(status):
 @app.route("/check_relay")
 def check_relay():
     relay_status = get_relay_status()
+    print(relay_status)
     return relay_status
 
 if __name__ == "__main__":
